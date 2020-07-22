@@ -170,7 +170,7 @@ def downgrade():
     sa.Column('Create_tmp_table_priv', mysql.ENUM('N', 'Y', charset='utf8'), server_default=sa.text("'N'"), nullable=False),
     sa.Column('Lock_tables_priv', mysql.ENUM('N', 'Y', charset='utf8'), server_default=sa.text("'N'"), nullable=False),
     sa.Column('Execute_priv', mysql.ENUM('N', 'Y', charset='utf8'), server_default=sa.text("'N'"), nullable=False),
-    sa.Column('Repl_slave_priv', mysql.ENUM('N', 'Y', charset='utf8'), server_default=sa.text("'N'"), nullable=False),
+    sa.Column('Repl_subordinate_priv', mysql.ENUM('N', 'Y', charset='utf8'), server_default=sa.text("'N'"), nullable=False),
     sa.Column('Repl_client_priv', mysql.ENUM('N', 'Y', charset='utf8'), server_default=sa.text("'N'"), nullable=False),
     sa.Column('Create_view_priv', mysql.ENUM('N', 'Y', charset='utf8'), server_default=sa.text("'N'"), nullable=False),
     sa.Column('Show_view_priv', mysql.ENUM('N', 'Y', charset='utf8'), server_default=sa.text("'N'"), nullable=False),
